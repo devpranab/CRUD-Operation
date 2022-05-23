@@ -30,7 +30,9 @@ const Home = () => {
         <td>{user.position}</td>
         <td>{user.salary}</td>
         <td>
+        <Link to={"/read/"+user.id}>
         <Button className='btnThree' color="success">Read</Button>
+        </Link>
         <Button className='btnThree' color="info">Edit</Button>
         <Link to={"/delete/"+user.id}>
         <Button className='btnThree' color="danger">Delete</Button>
