@@ -9,7 +9,9 @@ const Home = () => {
     //useContext hook end
     return (
         <div className='container'>
+          <Link to="/create">
            <Button className='createUserBtn' color="dark">Create User</Button>
+           </Link>
 
            <Table striped bordered hover>
   <thead>

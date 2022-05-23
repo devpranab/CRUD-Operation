@@ -4,6 +4,7 @@ import Home from './Home';
 import { UserProvider } from '../userContext/userContext';
 import Delete from './crud/Delete';
 import Read from './crud/Read';
+import Create from './crud/Create';
 
 function MainComponent() {
   return (
@@ -11,6 +12,7 @@ function MainComponent() {
    <h2 className='titleHeading'>CRUD Operation using React(Frontend)</h2>
    <UserProvider>
    <Routes>
+        <Route path="/create/" element={<Create />}/>
         <Route path="/read/:id" element={<Read />}/>
         <Route path="/delete/:id" element={<Delete />}/>
         <Route path="/" element={<Home />}/>
