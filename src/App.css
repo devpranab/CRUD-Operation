@@ -42,3 +42,15 @@
   margin: auto;
 }
 /* Create css end */
+
+/* Edit css start */
+.edit{
+  width: 50%;
+  margin: auto;
+}
+.edit h1{
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+/* Edit css end */
